@@ -8,8 +8,8 @@ Native Swift (AppKit + AVFoundation), no dependencies, about 550 lines of code. 
 ![FloatCam floating over a screen recording](docs/screenshot.png)
 -->
 
-[![Build](https://github.com/flaviort/floating-cam/actions/workflows/build.yml/badge.svg)](https://github.com/flaviort/floating-cam/actions/workflows/build.yml)
-[![Latest release](https://img.shields.io/github/v/release/flaviort/floating-cam)](https://github.com/flaviort/floating-cam/releases/latest)
+[![Build](https://github.com/flaviort/floatcam/actions/workflows/build.yml/badge.svg)](https://github.com/flaviort/floatcam/actions/workflows/build.yml)
+[![Latest release](https://img.shields.io/github/v/release/flaviort/floatcam)](https://github.com/flaviort/floatcam/releases/latest)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## Features
@@ -35,7 +35,7 @@ macOS 14 Sonoma or later, on Apple Silicon or Intel.
 
 ### Option 1: Download the app (easiest)
 
-1. Download **FloatCam.zip** from the [latest release](https://github.com/flaviort/floating-cam/releases/latest)
+1. Download **FloatCam.zip** from the [latest release](https://github.com/flaviort/floatcam/releases/latest)
 2. Unzip it and drag **FloatCam.app** into your **Applications** folder
 3. Open it. macOS will block it the first time (see below), then ask for camera access. Click **Allow**
 
@@ -70,8 +70,8 @@ The `install.command` file itself was downloaded from the internet, so macOS may
 ### Option 3: Terminal
 
 ```bash
-git clone https://github.com/flaviort/floating-cam.git
-cd floating-cam
+git clone https://github.com/flaviort/floatcam.git
+cd floatcam
 ./install.command
 ```
 
@@ -130,7 +130,7 @@ defaults delete com.flaviort.floatcam
 The whole app is five Swift files compiled straight with `swiftc`. No Xcode project.
 
 ```
-floating-cam/
+floatcam/
 ├── Sources/
 │   ├── main.swift            # App entry point
 │   ├── AppDelegate.swift     # Menu bar, menus, shape/size/position logic

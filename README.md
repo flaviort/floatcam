@@ -23,6 +23,10 @@ Native Swift (AppKit + AVFoundation), no dependencies, about 550 lines of code. 
 - Remembers shape, size, position and camera between launches
 - Menu bar only, no Dock icon. Hiding the window stops the camera, so the green light goes off
 
+## Privacy
+
+FloatCam only shows your camera on screen. It doesn't record, save or upload anything, and it never connects to the internet. When the window is hidden the camera is fully off. The code is all here if you want to check.
+
 ## Requirements
 
 macOS 14 Sonoma or later, on Apple Silicon or Intel.

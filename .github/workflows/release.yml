@@ -34,7 +34,16 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          {
+            echo "Download **FloatCam.zip**, unzip it and drag FloatCam.app into your Applications folder."
+            echo "The first time you open it, macOS will block it because it isn't notarized. Allow it in"
+            echo "**System Settings > Privacy & Security > Open Anyway**. [Full install guide](https://github.com/$GITHUB_REPOSITORY#install)"
+            echo
+            echo "## What's new"
+            echo
+            awk -v v="## ${GITHUB_REF_NAME#v}" '$0 == v {f=1; next} /^## /{f=0} f' CHANGELOG.md
+          } > notes.md
           gh release create "$GITHUB_REF_NAME" \
             build/FloatCam.zip build/FloatCam.zip.sha256 \
             --title "FloatCam $GITHUB_REF_NAME" \
-            --notes-file CHANGELOG.md
+            --notes-file notes.md

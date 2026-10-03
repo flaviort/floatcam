@@ -37,6 +37,7 @@ fi
 rm -rf build/obj
 
 cp Info.plist "$APP/Contents/Info.plist"
+cp Resources/AppIcon.icns "$APP/Contents/Resources/AppIcon.icns"
 
 echo "Signing (ad-hoc)..."
 codesign --force --sign - "$APP" >/dev/null 2>&1

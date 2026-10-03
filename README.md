@@ -133,6 +133,8 @@ floating-cam/
 │   ├── CameraManager.swift   # AVCaptureSession and camera switching
 │   ├── CameraWindow.swift    # Floating borderless window and masked video view
 │   └── Settings.swift        # Shapes and saved preferences
+├── Resources/AppIcon.icns     # App icon
+├── scripts/make-icon.swift   # Draws the icon (swift scripts/make-icon.swift)
 ├── Info.plist                # Bundle config and camera usage text
 ├── build.sh                  # Compiles build/FloatCam.app (--universal for Intel + Apple Silicon)
 └── install.command           # Builds and installs into /Applications
@@ -157,7 +159,6 @@ The workflow builds a universal app and attaches `FloatCam.zip` to a new GitHub 
 - [ ] Launch at login
 - [ ] Zoom and crop
 - [ ] Color filters and background blur
-- [ ] App icon
 - [ ] Homebrew cask
 
 ## License
